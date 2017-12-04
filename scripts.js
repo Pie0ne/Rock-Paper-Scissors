@@ -109,6 +109,12 @@ function playerPick(playerPick) {
         computerResultElem.innerHTML = "Win!";
         computer.score++;
     }
+    setGamePoints(); 
+    gameWinner();
+
+    /*if (player.score == 10 || computer.score == 10) {
+    	var gameState = 'ended';  <- when game ends show Jeszcze raz button
+    }*/ 
 }
 
 function playerPick(playerPick) {
@@ -125,15 +131,14 @@ function setGamePoints() {
     computerPointsElem.innerHTML = computer.score;
 }
 
-setGamePoints();
 
 function gameWinner() {
 	if (player.score == 10) {
-		alert(player.name + 'you Win !')
+		alert(player.name + ' you Win !')
 	}
 	else if (computer.score == 10) {
 		alert('Machine beats you !')
 	}
 }
 
-gameWinner()
+
