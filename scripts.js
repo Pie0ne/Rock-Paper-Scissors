@@ -112,9 +112,7 @@ function playerPick(playerPick) {
     setGamePoints(); 
     gameWinner();
 
-    /*if (player.score == 10 || computer.score == 10) {
-    	var gameState = 'ended';  <- when game ends show Jeszcze raz button
-    }*/ 
+    
 }
 
 function playerPick(playerPick) {
@@ -135,10 +133,15 @@ function setGamePoints() {
 function gameWinner() {
 	if (player.score == 10) {
 		alert(player.name + ' you Win !')
+        restartGame();
 	}
 	else if (computer.score == 10) {
 		alert('Machine beats you !')
+        restartGame();
 	}
 }
 
-
+function restartGame() {
+    gameState = 'ended';
+    setGameElements();
+}
