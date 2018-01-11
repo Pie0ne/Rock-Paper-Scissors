@@ -1,1 +1,1 @@
-# Rock-Paper-Scissors game made by Javascript during Front-end developer bootcamp.
+# Rock-Paper-Scissors game made during Front-end developer bootcamp.
