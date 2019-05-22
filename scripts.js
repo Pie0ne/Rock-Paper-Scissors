@@ -110,9 +110,7 @@ function playerPick(playerPick) {
         computer.score++;
     }
     setGamePoints(); 
-    gameWinner();
-
-    
+    gameWinner();    
 }
 
 function playerPick(playerPick) {
